@@ -1,0 +1,98 @@
+.el-button--primary {
+  background-color: #3664b7;
+  border-color: #3664b7;
+}
+
+.el-button.is-disabled {
+  background-color: #a0cfff;
+  border-color: #a0cfff;
+}
+
+/deep/ .el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: #3664b7;
+}
+
+/deep/ .el-tabs {
+  .el-tabs__nav-wrap {
+    .el-tabs__active-bar {
+      width: 46px !important;
+      height: 6px;
+      left: 24px;
+      background: #3664b7;
+      border-radius: 3px;
+    }
+
+    .el-tabs__item {
+      font-size: 22px;
+      font-family: 'MicrosoftYaHei';
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 31px;
+    }
+
+    .el-tabs__item.is-active {
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.85);
+    }
+
+    &::after {
+      height: 6px;
+      background: unset;
+      border-radius: 3px;
+    }
+  }
+
+  .el-tabs__header {
+    margin-bottom: unset;
+  }
+
+  .el-tabs__content {
+    .el-tab-pane {
+      height: 360px;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
+
+/deep/ .el-tabs--card {
+  .el-tabs__content {
+    .el-tab-pane {
+      height: unset !important;
+    }
+  }
+}
+
+/deep/ .el-table {
+  margin-top: 5px;
+
+  .el-table__header-wrapper table thead tr th {
+    color: rgba(0, 0, 0, 0.85);
+    background: unset;
+  }
+
+  &::before {
+    height: 0;
+  }
+
+  .descending .sort-caret.descending {
+    border-top-color: #3664b7;
+  }
+
+  .ascending .sort-caret.ascending {
+    border-bottom-color: #3664b7;
+  }
+
+}
+
+/deep/ .el-radio-group {
+  .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+    background: #3664b7;
+  }
+}
+
+/deep/.el-date-editor .el-range-separator {
+  padding: unset;
+}
